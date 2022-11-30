@@ -5,4 +5,4 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'studyUstraFramwork'
+rootProject.name = 'studyFrequentlyFrame'
