@@ -1,4 +1,4 @@
-package com.gs.studyManyUseFrame.filter;
+package com.studyManyUseFrame.filter;
 
 import org.springframework.web.filter.OncePerRequestFilter;
 

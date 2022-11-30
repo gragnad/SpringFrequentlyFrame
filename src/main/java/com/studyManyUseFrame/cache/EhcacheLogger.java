@@ -1,4 +1,4 @@
-package com.gs.studyManyUseFrame.cache;
+package com.studyManyUseFrame.cache;
 
 import lombok.extern.slf4j.Slf4j;
 import org.ehcache.event.CacheEvent;
