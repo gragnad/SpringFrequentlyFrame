@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/test
+#    jdbc-url: jdbc:mysql://127.0.0.1:3306/test
+    username: ENC(5p50CISufyIVv46XXv7IGa3HPSSbGA2C)
+    password: ENC(p6OHIaE8A6V5bznyoERk5e4Ld8rD+8wG)
+
+# net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+#    master:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      jdbc-url: ENC(4N2GXLkOxIgTyUJHd/PdIQvm10mJITubU3Kco5jgAP9cEzDNXrzvwTAQtkZB0VCu)
+#      username: ENC(5p50CISufyIVv46XXv7IGa3HPSSbGA2C)
+#      password: ENC(p6OHIaE8A6V5bznyoERk5e4Ld8rD+8wG)
+#    slave:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      jdbc-url: ENC(4N2GXLkOxIgTyUJHd/PdIQvm10mJITubU3Kco5jgAP9cEzDNXrzvwTAQtkZB0VCu)
+#      username: ENC(5p50CISufyIVv46XXv7IGa3HPSSbGA2C)
+#      password: ENC(p6OHIaE8A6V5bznyoERk5e4Ld8rD+8wG)
+  jpa:
+    generate-ddl: true
+    database: mysql
+    show-sql: true
+
+log4jdbc:
+  spylogdelegator:
+    name: net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
+    dump:
+      sql:
+        maxlinelength: 90L
+
+logging:
+  level:
+    org:
+      type: trace
+      hibernate:
+        SQL: DEBUG
